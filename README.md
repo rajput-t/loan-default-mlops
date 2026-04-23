@@ -67,7 +67,7 @@ Model promoted to production using MLflow's alias system:
 model = mlflow.sklearn.load_model("models:/GradientBoosting_v1@champion")
 ```
 
-> ![MLflow Experiments](../screenshots/mlflow_comparison.png)
+> ![MLflow Experiments](screenshots/mlflow_comparison.png)
 
 ---
 
@@ -110,7 +110,7 @@ Content-Type: application/json
 }
 ```
 
-> ![FastAPI Docs](../screenshots/fastapi_docs.png)
+> ![FastAPI Docs](screenshots/fastapi_docs.png)
 
 ---
 
