@@ -1,8 +1,18 @@
+# Core ML
+scikit-learn
 pandas
 numpy
-scikit-learn
-matplotlib
-seaborn
+
+# Experiment tracking & model registry
 mlflow
+
+# API serving
 fastapi
 uvicorn
+
+# Data validation
+pydantic
+
+# Visualization (for EDA notebook)
+matplotlib
+seaborn
