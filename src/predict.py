@@ -1,6 +1,8 @@
 import mlflow.sklearn
 import pandas as pd
 import numpy as np
+import warnings
+warnings.filterwarnings("ignore", category=FutureWarning, module="mlflow")
 
 # ─────────────────────────────────────────────
 # 1. LOAD MODEL FROM REGISTRY

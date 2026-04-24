@@ -140,8 +140,10 @@ for exp in experiments:
         # Log the entire pipeline as a model
         mlflow.sklearn.log_model(
             pipeline,
-            artifact_path="model",
-            registered_model_name=exp["name"]
+            name="model",
+            registered_model_name=exp["name"],
+            serialization_format="skops",
+            skops_trusted_types=["numpy.dtype"]
         )
 
         print(f"\n{'='*50}")
