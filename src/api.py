@@ -12,7 +12,7 @@ mlflow.set_registry_uri("../mlruns")
 
 print("Loading model from MLflow registry...")
 model = mlflow.sklearn.load_model("models:/GradientBoosting_v1@champion")
-print("✅ Model loaded successfully")
+print("Model loaded successfully")
 
 # ─────────────────────────────────────────────
 # 2. FASTAPI APP

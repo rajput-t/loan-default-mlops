@@ -15,7 +15,7 @@ model = mlflow.sklearn.load_model(
     model_uri="models:/GradientBoosting_v1@champion"
 )
 
-print("✅ Model loaded from MLflow Registry")
+print(" Model loaded from MLflow Registry")
 print(f"   Model type: {type(model.named_steps['model']).__name__}")
 
 # ─────────────────────────────────────────────
@@ -117,7 +117,7 @@ print("="*50)
 
 for case in test_cases:
     result = predict_default(case["data"])
-    print(f"\n📋 {case['label']}")
+    print(f"\n {case['label']}")
     print(f"   Default Probability : {result['default_probability']:.1%}")
     print(f"   Risk Category       : {result['risk_category']}")
-    print(f"   Loan Decision       : {'✅ APPROVE' if result['approve_loan'] else '❌ DECLINE'}")
+    print(f"   Loan Decision       : {'APPROVE' if result['approve_loan'] else 'DECLINE'}")

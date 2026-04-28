@@ -153,4 +153,4 @@ for exp in experiments:
         print(f"  CV AUC    : {cv_auc:.4f}")
         print(f"  F1        : {f1:.4f}")
 
-print("\n✅ All runs logged. Launch UI with: mlflow ui")
+print("\n All runs logged. Launch UI with: mlflow ui")
