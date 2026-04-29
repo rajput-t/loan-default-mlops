@@ -103,7 +103,7 @@ experiments = [
 # ─────────────────────────────────────────────
 # 5. MLFLOW EXPERIMENT LOOP
 # ─────────────────────────────────────────────
-mlflow.set_tracking_uri("../mlruns")  # always save to project root
+mlflow.set_tracking_uri("../mlruns")
 mlflow.set_experiment("loan_default_prediction")
 
 for exp in experiments:
