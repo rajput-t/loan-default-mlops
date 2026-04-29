@@ -46,7 +46,7 @@ def predict_default(input_data: dict) -> dict:
 
     proba = model.predict_proba(df)[0][1]  # probability of default
 
-    # Risk bucketing — useful for business logic
+    # Risk bucketing
     if proba < 0.15:
         risk = "LOW"
     elif proba < 0.40:
